@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	height:100vh;
+	width:auto;
+	background-image:url('../images/back2.jpg'), linear-gradient(rgba(100, 0, 100, 0.5), rgba(0, 0, 255, 0.5));
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	background-blend-mode:overlay;
+	
+	backdrop-filter: blur(10px);
+	--webkit-backdrop-filter:blur(10px);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.errorMessage{
+	color:red;
+	height:30px;
+	width:100%;
+	text-align:center;
+	background:#FFFFFF;
+	
+}
+.box{
+	background:transparent;
+	padding:50px;
+	width:50%;
+	height:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.icon{
+	height:100px;
+	width:100px;
+	margin:20px 0px;
+	
+}
+.heading{
+	color:#FFFFFF;
+	margin-bottom:20px;
+	font-size:26px;
+}
+
+.input-pass{
+	padding:10px;
+	outline:none;
+	border:1px solid #000;
+	border-radius:12px;
+	width:300px;
+  	padding-right: 40px;
+  	
+  	font-weight:bold;
+}
+.input-pass:focus{
+	border-bottom:2px solid #008b8f;
+	
+}
+
+.right-arrow {
+  position: absolute;
+  z-index: 10; /* Ensure it's on top of other elements */
+  right: 10px; /* Position it inside the input on the right */
+  top: 50%; /* Align vertically */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  height: 25px;
+  width: 30px;
+  cursor:pointer;
+  transition:all 0.1s ease;
+  
+}
+
+.right-arrow:hover{
+	border-radius:50px;
+	border:1px solid #FFFFFF;
+}
+.eye{
+	
+  position: absolute;
+  z-index: 10; /* Ensure it's on top of other elements */
+  right: 50px; /* Position it inside the input on the right */
+  top: 50%; /* Align vertically */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  height: 20px;
+  width: 20px;
+  cursor:pointer;
+  transition:all 0.1s ease;
+}
+.eye:hover{
+	border-radius:5px;
+	background-color:rgba(0, 0, 0, 0.3);
+}

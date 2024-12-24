@@ -1,0 +1,107 @@
+@charset "UTF-8";
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+
+}
+main{
+	background-image:url("../images/nature.jpeg"), linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	background-size:100% 100%;
+	background-blend-mode:overlay;
+	height:100vh;
+	width:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.wrapper{
+	background:black;
+	height:30rem;
+	width:60rem;
+	display:flex;
+	flex-direction:row;
+	
+}
+.image{
+	background-image:url("../images/signup.png"), linear-gradient(to right, rgba(0, 10, 10, 0.7), rgba(225, 0, 0, 0.5));
+	background-blend-mode:overlay;
+	background-size:100% 100%;
+	width:20rem;
+	height:100%;
+}
+.image h2{
+	text-align:center;
+	color:#FFFFFF;
+	width:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size: 1.4rem;
+	margin-top:40px;
+	border-right:4px solid;
+	letter-spacing:5px;
+	 animation: 
+        typing 2s infinite alternate,
+        cursor .4s  infinite alternate;
+				
+	
+}
+@keyframes cursor{
+	50%{border-color:transparent;}
+	
+}
+@keyframes typing{
+	from{width:0;}
+	
+}
+
+/*here started form work */
+.form-container{
+	background:#FFFFFF;
+	width:40rem;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+}
+/*this code is for form heading */
+.form-heading{
+	color:#212121;
+	margin-top:20px;
+	margin-left:30px;
+}
+/*now here started form content like input or labels*/
+.group{
+	
+	width:600px;
+	height:50px;
+	margin-top:20px;
+	margin-left:30px;
+	position: relative;
+}
+.inner-group1{
+	position:absolute;
+	left:0;
+	width:300px;
+}
+.inner-group2{
+	position:absolute;
+	right:0;
+	width:300px;
+}
+.label{
+	position:absolute;
+	
+	color:#212121;
+	
+}
+.input{
+	padding:5px;
+	width:10rem;
+	border:none;
+	outline:none;
+	border-bottom:2px solid #000;
+	
+}
+
