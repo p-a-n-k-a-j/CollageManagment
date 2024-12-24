@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Collage port</title>
+<title>Collage port </title>
 <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
